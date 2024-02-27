@@ -1,7 +1,13 @@
 import React from "react";
 import "./Home.css";
 const Home = () => {
-  return <div>Home section here</div>;
+  return (
+    <div className="container-fluid home">
+      <div className="container home-content">
+        <h1>Hi I'm a</h1>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
