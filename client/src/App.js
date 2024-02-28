@@ -1,10 +1,12 @@
 import React from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import About from "./Components/About/About";
 
 const App = () => {
   return (
-    <div className="container-fluid sidebar-section">
+    <div>
       <Sidebar />
+      <About/>
     </div>
   );
 };
