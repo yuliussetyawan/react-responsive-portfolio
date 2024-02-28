@@ -12,3 +12,53 @@
   margin-top: 30px;
   color: rgb(242, 227, 13);
 }
+
+.button-for-action {
+  display: flex;
+}
+
+.hire-me-button {
+  background-color: #ff854c;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid white;
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition-duration: 1s;
+}
+
+.hire-me-button:hover {
+  background-color: white;
+  width: 250px;
+  color: black;
+}
+
+.get-resume-button {
+  background-color: orangered;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid white;
+  font-size: 17px;
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition-duration: 1s;
+}
+
+.get-resume-button:hover {
+  background-color: rgb(232, 174, 13);
+  width: 250px;
+  color: black;
+}
+
+.get-resume-button a {
+  text-decoration: none;
+  color: white;
+}
