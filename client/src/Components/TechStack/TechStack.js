@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TechStack.css";
 
 const data = [
@@ -47,18 +47,6 @@ const data = [
     id: 12,
     name: "Typescript",
   },
-  {
-    id: 13,
-    name: "Python",
-  },
-  {
-    id: 14,
-    name: "Django",
-  },
-  {
-    id: 15,
-    name: "UI/UX Design",
-  },
 ];
 
 const colors = [
@@ -80,6 +68,14 @@ const colors = [
 ];
 
 const TechStack = () => {
+  const [showMoreTechStack, setShowMoreTechStack] = useState(9);
+  const loadMore = () => {
+    if (showMoreTechStack === data.length) {
+      setShowMoreTechStack(9);
+      return;
+    }
+    setShowMoreTechStack((prev) => prev + 3);
+  };
   return (
     <div className="container tech-stack-section">
       <div className="section-title">
@@ -87,9 +83,15 @@ const TechStack = () => {
         <span className="line"></span>
       </div>
       <div className="row">
-        {data.map((item, index) => (
+        {data.slice(0, showMoreTechStack).map((item, index) => (
           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={item.id}>
-            <div className="tech-content">
+            <div
+              className={
+                index === 0
+                  ? "tech-content-marked tech-content"
+                  : "tech-content"
+              }
+            >
               <span
                 className="tech-number"
                 style={{ backgroundColor: colors[index] }}
@@ -101,6 +103,10 @@ const TechStack = () => {
           </div>
         ))}
       </div>
+
+      <span className="load-more-tech-stack" onClick={loadMore}>
+        {showMoreTechStack === data.length ? "Show Less" : "Load More"}
+      </span>
     </div>
   );
 };

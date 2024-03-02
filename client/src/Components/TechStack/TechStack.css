@@ -18,14 +18,19 @@
   transition-duration: 0.5s;
 }
 
+
 .tech-content:hover {
   background-color: #ff854c;
   color: white;
   cursor: pointer;
-
   box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
+}
+
+.tech-content-marked{
+  background-color: tomato;
+  color: white;
 }
 
 .tech-content p {
@@ -35,7 +40,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.tech-number{
+.tech-number {
   border-radius: 90px;
   height: 50px;
   width: 50px;
@@ -45,5 +50,27 @@
   justify-content: center;
   display: block;
   margin: 0 auto;
+  margin-top: -30px;
   line-height: 50px;
+}
+
+.load-more-tech-stack {
+  background-color: tomato;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.load-more-tech-stack:hover {
+  background-color: blueviolet;
 }
