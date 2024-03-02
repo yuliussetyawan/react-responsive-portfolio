@@ -5,15 +5,18 @@
   box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   -webkit-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
   -moz-box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
-  transition-duration: 0.5s;
 }
 
-.project-list:hover{
+.project-list-opened {
   border-left: 5px solid blueviolet;
-  cursor:pointer;
 }
 
-.title-and-collapse-option{
+.project-list:hover {
+  border-left: 5px solid blueviolet;
+  cursor: pointer;
+}
+
+.title-and-collapse-option {
   display: flex;
   justify-content: space-between;
   margin: 5px;
@@ -54,4 +57,9 @@
   color: white;
   text-decoration: none;
   padding: 10px;
+}
+
+.description {
+  margin: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
