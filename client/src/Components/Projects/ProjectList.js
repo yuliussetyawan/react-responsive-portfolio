@@ -12,6 +12,8 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
     <div
       className={show ? "project-list project-list-opened" : "project-list"}
       onClick={handleShowAndCollapse}
+      onMouseEnter={() => setShow(true)}
+      // onMouseLeave={() => setShow(false)}
     >
       <div className="title-and-collapse-option">
         <h5>{name}</h5>
