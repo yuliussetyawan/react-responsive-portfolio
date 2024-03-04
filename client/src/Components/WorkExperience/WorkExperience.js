@@ -151,7 +151,7 @@ const colors = [
 
 const WorkExperience = () => {
   return (
-    <div className="container">
+    <div className="container workexperience-section">
       <div className="section-title">
         <h5>Work Experience</h5>
         <span className="line"></span>

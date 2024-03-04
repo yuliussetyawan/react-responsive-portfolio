@@ -1,3 +1,11 @@
+.workexperience-section {
+  margin-top: 70px;
+}
+
+.timeline-section{
+  margin-top: 20px;
+}
+
 .tech-skills p {
   background-color: black;
   border-radius: 90px;
@@ -12,6 +20,6 @@
   color: black;
 }
 
-.date-class{
+.date-class {
   color: black;
 }
