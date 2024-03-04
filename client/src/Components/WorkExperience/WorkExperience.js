@@ -1,6 +1,11 @@
 import React from "react";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import "./WorkExperience.css";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { MdGroupWork } from "react-icons/md";
 
 const data = [
   {
@@ -135,12 +140,58 @@ const data = [
   },
 ];
 
+const colors = [
+  "#800000",
+  "#FF8042",
+  "#001CCE",
+  "#4B088A",
+  "#FF6347",
+  "#FF1042",
+];
+
 const WorkExperience = () => {
   return (
     <div className="container">
       <div className="section-title">
         <h5>Work Experience</h5>
         <span className="line"></span>
+      </div>
+      <div className="timeline-section">
+        <VerticalTimeline lineColor="#FF1042">
+          {data.map((item, index) => (
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: colors[index], color: "#fff" }}
+              contentArrowStyle={{ borderRight: "7px solid  #FFBB24" }}
+              date={item.year}
+              dateClassName="date-class"
+              iconStyle={{ background: colors[index], color: "#fff" }}
+              icon={<MdGroupWork />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                {item.companyname}
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {item.position}
+              </h4>
+
+              <div className="row">
+                {item.techskills.map((tec, index) => (
+                  <div
+                    className="col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                    key={index}
+                  >
+                    <div className="tech-skills">
+                      <p>{tec.techname}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <p>{item.des}</p>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
       </div>
     </div>
   );
