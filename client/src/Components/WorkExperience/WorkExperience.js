@@ -151,7 +151,7 @@ const colors = [
 
 const WorkExperience = () => {
   return (
-    <div className="container workexperience-section">
+    <div className="container workexperience-section" id="workexperience">
       <div className="section-title">
         <h5>Work Experience</h5>
         <span className="line"></span>
@@ -167,6 +167,7 @@ const WorkExperience = () => {
               dateClassName="date-class"
               iconStyle={{ background: colors[index], color: "#fff" }}
               icon={<MdGroupWork />}
+              key={index}
             >
               <h3 className="vertical-timeline-element-title">
                 {item.companyname}

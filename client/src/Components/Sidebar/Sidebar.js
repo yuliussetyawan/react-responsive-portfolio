@@ -20,12 +20,10 @@ const Sidebar = () => {
             )}
           </p>
         </div>
-        <SidebarList expandSidebar={expandSidebar}/>
+        <SidebarList expandSidebar={expandSidebar} />
       </div>
       <div className="container">
-        <p>
-          <Home />
-        </p>
+        <Home />
       </div>
     </div>
   );

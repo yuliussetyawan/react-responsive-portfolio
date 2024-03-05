@@ -127,7 +127,7 @@ const data = [
 
 const Project = () => {
   return (
-    <div className="container">
+    <div className="container projects" id="project">
       <div className="section-title">
         <h5>Projects</h5>
         <span className="line"></span>

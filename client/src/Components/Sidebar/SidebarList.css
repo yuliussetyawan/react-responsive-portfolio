@@ -10,7 +10,7 @@
   border: 3px solid yellow;
 }
 
-.navbar-items ul li{
+.navbar-items ul li {
   color: white;
   list-style-type: none;
   cursor: pointer;
@@ -18,7 +18,7 @@
   text-decoration: none;
 }
 
-.navbar-items ul li svg{
+.navbar-items ul li svg {
   margin-right: 25px;
   margin-left: 10px;
 }
@@ -29,6 +29,15 @@
   list-style-type: none;
 }
 
-.navbar-items-only-icons ul li svg{
+.navbar-items-only-icons ul li svg {
   margin-left: 10px;
+}
+
+.navbar-items ul li a {
+  text-decoration: none;
+}
+
+.nav-item .active {
+  border-left: 2px solid yellow;
+  color: yellow;
 }

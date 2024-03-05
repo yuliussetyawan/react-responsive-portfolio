@@ -113,7 +113,7 @@ const Testimonial = () => {
     ],
   };
   return (
-    <div className="container testimonial-section">
+    <div className="container testimonial-section" id="testimonial">
       <div className="section-title">
         <h5>Testimonial</h5>
         <span className="line"></span>
@@ -122,7 +122,7 @@ const Testimonial = () => {
       <div className="testimonial-slider">
         <Slider {...settings}>
           {data.map((item, index) => (
-            <div className="content-slider-main">
+            <div className="content-slider-main" key={index}>
               <div
                 className="content-slider"
                 key={index}

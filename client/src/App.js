@@ -15,10 +15,10 @@ const App = () => {
     <div>
       <Sidebar />
       <About />
-      <TechStack />
-      <Project />
       <WorkExperience />
+      <TechStack />
       <Education />
+      <Project />
       <Testimonial />
       <Contact />
       <ScrollToTop

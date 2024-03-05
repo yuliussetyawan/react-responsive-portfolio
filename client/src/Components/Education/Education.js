@@ -39,7 +39,7 @@ const colors = ["#001CCE", "#4B088A", "#FE2EF7", "#FF1042"];
 
 const Education = () => {
   return (
-    <div className="container education-section">
+    <div className="container education-section" id="education">
       <div className="section-title">
         <h5>Education</h5>
         <span className="line"></span>
@@ -56,6 +56,7 @@ const Education = () => {
               dateClassName="date-class"
               iconStyle={{ background: colors[index], color: "#fff" }}
               icon={<FaGraduationCap />}
+              key={index}
             >
               <h3 className="vertical-timeline-element-title">{item.name}</h3>
               <h5
