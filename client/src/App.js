@@ -7,6 +7,8 @@ import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import Education from "./Components/Education/Education";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
+import ScrollToTop from "react-scroll-to-top";
+import "./App.css";
 
 const App = () => {
   return (
@@ -15,10 +17,18 @@ const App = () => {
       <About />
       <TechStack />
       <Project />
-      <WorkExperience/>
-      <Education/>
-      <Testimonial/>
-      <Contact/>
+      <WorkExperience />
+      <Education />
+      <Testimonial />
+      <Contact />
+      <ScrollToTop
+        smooth={true}
+        top="20"
+        color="white"
+        height="20"
+        width="20"
+        style={{ borderRadius: "90px", backgroundColor: "#38004c" }}
+      />
     </div>
   );
 };
