@@ -6,6 +6,10 @@
   height: 500px;
 }
 
+.about-image{
+  text-align: center;
+}
+
 .about-image img {
   height: 300px;
   width: 300px;
@@ -32,4 +36,10 @@
   height: 3px;
   margin: 1px auto;
   background-color: yellowgreen;
+}
+
+@media (max-width: 1000px) {
+  .about-section {
+    height: auto;
+  }
 }
